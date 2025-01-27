@@ -62,3 +62,18 @@ Apotomis_betuletana.faa
 Arctia_plantaginis.faa
 Athrips_mouffetella.faa
 Autographa_gamma.faa
+
+
+# also need my proteomes, where I have removed any species already in their dataset, even if different accessions
+Bicyclus_anynana	GCF_947172395.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/947/172/395/GCF_947172395.1_ilBicAnyn1.1/GCF_947172395.1_ilBicAnyn1.1_protein.faa.gz
+Cydia_fagiglandana	GCF_963556715.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/963/556/715/GCF_963556715.1_ilCydFagi1.1/GCF_963556715.1_ilCydFagi1.1_protein.faa.gz
+Leptidea_sinapis	GCF_905404315.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/905/404/315/GCF_905404315.1_ilLepSina1.1/GCF_905404315.1_ilLepSina1.1_protein.faa.gz
+Nymphalis_io	GCF_905147045.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/905/147/045/GCF_905147045.1_ilAglIoxx1.1/GCF_905147045.1_ilAglIoxx1.1_protein.faa.gz
+Ostrinia_nubilalis	GCF_963855985.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/963/855/985/GCF_963855985.1_ilOstNubi1.1/GCF_963855985.1_ilOstNubi1.1_protein.faa.gz
+Papilio_machaon	GCF_912999745.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/912/999/745/GCF_912999745.1_ilPapMach1.1/GCF_912999745.1_ilPapMach1.1_protein.faa.gz
+Parnassius_apollo	GCA_907164705.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/907/164/705/GCA_907164705.1_Parnassius_apollo/GCA_907164705.1_Parnassius_apollo_protein.faa.gz
+Pieris_napi	GCF_905475465.1	https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/905/475/465/GCF_905475465.1_ilPieNapi1.2/GCF_905475465.1_ilPieNapi1.2_protein.faa.gz
+
+#
+cut -f3 faa_2_get | parallel -j2 'wget {}'
+gunzip *gz
