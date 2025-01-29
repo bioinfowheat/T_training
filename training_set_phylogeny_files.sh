@@ -7,7 +7,7 @@ https://bioinf.uni-greifswald.de/bioinf/braker/lepi/make.doc
 # DUKE
 cd /mnt/griffin/chrwhe/T_training_tree
 
-more Lepidopteras_IDs.tsv
+more Lepidopteras_IDs.tsv # n=40 files
 Lepidopteras    Accession_GenBank
 Agrotis_ipsilon GCA_028554685.1
 Plutella_xylostella     GCF_932276165.1

@@ -34,4 +34,7 @@ busco -i /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/protein_files/Acronict
 parallel -j 2 'busco -f -i {} -l lepidoptera_odb10 -m prot -c 25 --out_path /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/busco_run_local' ::: /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/protein_files/*.faa
 
 # then wheat files
-parallel -j 2 'busco -f -i {} -l lepidoptera_odb10 -m prot -c 25 --out_path /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/busco_run_local' ::: /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/wheat_protein_files/*.faa
+parallel -j 4 'busco -f -i {} -l lepidoptera_odb10 -m prot -c 15 --out_path /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/busco_run_local' ::: /mnt/griffin/chrwhe/T_training_tree/Lepidopteras/wheat_protein_files/*.faa
+
+#
+mamba deactivate
